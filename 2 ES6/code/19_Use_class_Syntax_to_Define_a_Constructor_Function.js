@@ -31,3 +31,22 @@ Note: UpperCamelCase should be used by convention for ES6 class names, as in Spa
 
 The constructor method is a special method for creating and initializing an object created with a class. 
 You will learn more about it in the Object Oriented Programming section of the JavaScript Algorithms And Data Structures Certification.
+                                                */
+
+
+                                                /*
+                                            Question:
+Use the class keyword and write a constructor to create the Vegetable class.
+The Vegitable class allows you to create a vegitable object with a property name that gets passed to the constructor.
+                                                */
+
+// Only change code below this line
+class Vegetable{
+    constructor (name){
+        this.name = name;
+    }
+}
+// Only change code above this line
+
+const carrot = new Vegetable('carrort');
+console.log(carrot.name);
