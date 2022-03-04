@@ -1,0 +1,3 @@
+myPromise.then(result =>{
+
+});
