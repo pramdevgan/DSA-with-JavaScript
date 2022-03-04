@@ -9,8 +9,8 @@ Consequently, you cannot pick or choose which elements you want to assign to var
 
 Destructuring an array lets us do exactly that:
                                         */
-const [a,b] = [1,2,3,4,5,6];
-console.log(a,b);
+// const [a,b] = [1,2,3,4,5,6];
+// console.log(a,b);
 
                                         /*
 The console will display the values of a and b as 1, 2.
@@ -19,4 +19,16 @@ The variable a is assigned the first value of the array,
 and b is assigned the second value of the array. 
 We can also access the value at any index in an array with destructuring by using commas to reach the desired index:
                                         */
+
+const [a,b,,,c] = [1, 2, 3, 4, 5, 6];
+console.log(a,b,c);
+// The console will display the values of a,b and c as 1,2,5.
+
+                                        /*
+                                Question:
+                                        */
+let a1 = 8, b1 = 6; // change a1 and b1 to a and b
+console.log("Before swap: ", a1,b1);
+[a1,b1] = [b1,a1];
+console.log("After swap: ", a1,b1);
 
